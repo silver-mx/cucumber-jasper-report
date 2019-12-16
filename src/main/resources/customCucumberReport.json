@@ -1,0 +1,243 @@
+{
+    "report": {
+        "totalTests": 3,
+        "testsPassed": 3,
+        "testsFailed": 0,
+        "scenarios": [
+            {
+                "start_timestamp": "2019-12-10T17:14:58.640Z",
+                "line": 2,
+                "name": "user can search images by keyword",
+                "description": "",
+                "id": "google-image-search;user-can-search-images-by-keyword",
+                "type": "scenario",
+                "keyword": "Scenario",
+                "steps": [
+                    {
+                        "result": {
+                            "duration": 3080654731,
+                            "status": "passed"
+                        },
+                        "line": 4,
+                        "name": "an open browser with google.com",
+                        "match": {
+                            "location": "GoogleSearchStepDefinitions.openGoogleSearch()"
+                        },
+                        "keyword": "Given "
+                    },
+                    {
+                        "result": {
+                            "duration": 484496054,
+                            "status": "passed"
+                        },
+                        "line": 5,
+                        "name": "click \"Images\" link",
+                        "match": {
+                            "location": "GoogleImageSearchStepDefinitions.chooseImagesAsSearchTarget()"
+                        },
+                        "keyword": "When "
+                    },
+                    {
+                        "result": {
+                            "duration": 1109315444,
+                            "status": "passed"
+                        },
+                        "line": 6,
+                        "name": "enter a keyword selenide in input field",
+                        "match": {
+                            "arguments": [
+                                {
+                                    "val": "selenide",
+                                    "offset": 16
+                                }
+                            ],
+                            "location": "GoogleImageSearchStepDefinitions.enterKeyword(String)"
+                        },
+                        "keyword": "And "
+                    },
+                    {
+                        "result": {
+                            "duration": 107066851,
+                            "status": "passed"
+                        },
+                        "line": 7,
+                        "name": "at least top 100 matching images should be shown",
+                        "match": {
+                            "arguments": [
+                                {
+                                    "val": "100",
+                                    "offset": 13
+                                }
+                            ],
+                            "location": "GoogleImageSearchStepDefinitions.topTenMatchedImagesShouldBeShown(int)"
+                        },
+                        "keyword": "Then "
+                    }
+                ],
+                "featureName": "Google image search",
+                "result": "passed",
+                "requirement": "NA"
+            },
+            {
+                "start_timestamp": "2019-12-10T17:15:03.435Z",
+                "line": 3,
+                "name": "user can search any keyword",
+                "description": "",
+                "id": "google-text-search;user-can-search-any-keyword",
+                "type": "scenario",
+                "keyword": "Scenario",
+                "steps": [
+                    {
+                        "result": {
+                            "duration": 314579115,
+                            "status": "passed"
+                        },
+                        "line": 5,
+                        "name": "an open browser with google.com",
+                        "match": {
+                            "location": "GoogleSearchStepDefinitions.openGoogleSearch()"
+                        },
+                        "keyword": "Given "
+                    },
+                    {
+                        "result": {
+                            "duration": 1086707501,
+                            "status": "passed"
+                        },
+                        "line": 6,
+                        "name": "a keyword selenide is entered in input field",
+                        "match": {
+                            "arguments": [
+                                {
+                                    "val": "selenide",
+                                    "offset": 10
+                                }
+                            ],
+                            "location": "GoogleSearchStepDefinitions.enterKeyword(String)"
+                        },
+                        "keyword": "When "
+                    },
+                    {
+                        "result": {
+                            "duration": 15339029,
+                            "status": "passed"
+                        },
+                        "line": 7,
+                        "name": "at least top 1 matches should be shown",
+                        "match": {
+                            "arguments": [
+                                {
+                                    "val": "1",
+                                    "offset": 13
+                                }
+                            ],
+                            "location": "GoogleSearchStepDefinitions.topTenMatchesShouldBeShown(int)"
+                        },
+                        "keyword": "Then "
+                    },
+                    {
+                        "result": {
+                            "duration": 57341787,
+                            "status": "passed"
+                        },
+                        "lielementsne": 8,
+                        "name": "the first one should contain selenide.org",
+                        "match": {
+                            "arguments": [
+                                {
+                                    "val": "selenide.org",
+                                    "offset": 29
+                                }
+                            ],
+                            "location": "GoogleSearchStepDefinitions.theFirstOneShouldContainKeyword(String)"
+                        },
+                        "keyword": "Then "
+                    }
+                ],
+                "featureName": "Google text search",
+                "result": "passed",
+                "requirement": "NA"
+            },
+            {
+                "start_timestamp": "2019-12-10T17:15:04.912Z",
+                "line": 10,
+                "name": "user can search any keyword in Russian",
+                "description": "",
+                "id": "google-text-search;user-can-search-any-keyword-in-russian",
+                "type": "scenario",
+                "keyword": "Scenario",
+                "steps": [
+                    {
+                        "result": {
+                            "duration": 232516317,
+                            "status": "passed"
+                        },
+                        "line": 12,
+                        "name": "an open browser with google.com",
+                        "match": {
+                            "location": "GoogleSearchStepDefinitions.openGoogleSearch()"
+                        },
+                        "keyword": "Given "
+                    },
+                    {
+                        "result": {
+                            "duration": 754894581,
+                            "status": "passed"
+                        },
+                        "line": 13,
+                        "name": "a keyword \"\u0441\u0435\u043b\u0435\u043d\u0438\u0434 \u0442\u0435\u0441\u0442\u044b\" is entered in input field",
+                        "match": {
+                            "arguments": [
+                                {
+                                    "val": "\"\u0441\u0435\u043b\u0435\u043d\u0438\u0434 \u0442\u0435\u0441\u0442\u044b\"",
+                                    "offset": 10
+                                }
+                            ],
+                            "location": "GoogleSearchStepDefinitions.enterKeyword(String)"
+                        },
+                        "keyword": "When "
+                    },
+                    {
+                        "result": {
+                            "duration": 62792108,
+                            "status": "passed"
+                        },
+                        "line": 14,
+                        "name": "at least top 1 matches should be shown",
+                        "match": {
+                            "arguments": [
+                                {
+                                    "val": "1",
+                                    "offset": 13
+                                }
+                            ],
+                            "location": "GoogleSearchStepDefinitions.topTenMatchesShouldBeShown(int)"
+                        },
+                        "keyword": "Then "
+                    },
+                    {
+                        "result": {
+                            "duration": 36006346,
+                            "status": "passed"
+                        },
+                        "line": 15,
+                        "name": "the first one should contain selenide.org",
+                        "match": {
+                            "arguments": [
+                                {
+                                    "val": "selenide.org",
+                                    "offset": 29
+                                }
+                            ],
+                            "location": "GoogleSearchStepDefinitions.theFirstOneShouldContainKeyword(String)"
+                        },
+                        "keyword": "Then "
+                    }
+                ],
+                "featureName": "Google text search",
+                "result": "passed",
+                "requirement": "NA"
+            }
+        ]
+    }
+}
