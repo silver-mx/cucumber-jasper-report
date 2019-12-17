@@ -1,8 +1,11 @@
 {
     "report": {
+        "appName": "TBD",
+        "version": "TBD",
+        "environment": "TBD",
         "totalTests": 3,
-        "testsPassed": 3,
-        "testsFailed": 0,
+        "passedTests": 3,
+        "failedTests": 0,
         "scenarios": [
             {
                 "start_timestamp": "2019-12-10T17:14:58.640Z",
